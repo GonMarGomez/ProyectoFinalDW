@@ -1,0 +1,272 @@
+@import "../abstract.scss/variables";
+.informacion{
+    margin-top: 50px;
+  }
+ 
+ .informacion__cuidados{
+     display: flex;
+ justify-content: space-around;
+ }
+ .cuidados__titulo{
+     padding: 10px;
+     background-color: $colorVioleta;
+     font-size: 18px;
+     border: solid black 2px;
+     justify-content: center;
+     align-items: center;
+     margin: 0px;
+     height: 410px;
+     width: 190px;
+     display: flex;
+    p{
+        background-color:$colorVioleta ;
+        font-size: 18px;
+    }
+    @media (max-width: 1200px){
+        margin-bottom: 20px;
+    }
+ }
+ .presentacion__titulo{
+     display: flex;
+     justify-content: center;
+     img{
+        width: 100px;
+     }
+ }
+ .cuidados__parrafo{
+     display: flex;
+     justify-content: space-between;
+     gap: 10px;
+     @media (max-width: 500px){
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    };
+     @each $color, $fondo in $coloresFondo{
+        .parrafo__fondo--#{$color}{
+            background-color: $fondo;
+            font-size: 15px;
+            font-weight: 400;
+            border: solid black 2px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px;
+            @media (max-width: 1200px){
+                width: 40%;
+                height: 150px;
+                font-size: 15px;
+            }
+            @media (max-width: 800px){
+                font-size: 11px;
+            }
+            @media (max-width: 500px){
+                font-size: 10px;
+                flex-direction: column;
+                width: 100%;
+            }
+        };
+    };
+
+ }
+ .tiposDeTote__titulo{
+    margin-top: 20px;
+ }
+ .presentacionBox__container{
+     display: flex;
+     gap: 10px;
+
+     @each $color, $fondo in $coloresFondo{
+        .container__rectangulo--#{$color}{
+            background-color: $fondo;
+            height: 15px;
+            width: 125px;
+            border: solid black 2px;
+        };
+    };
+}
+@media (max-width: 500px){
+    .presentacionBox__container{
+        display: none;
+    }
+ }
+ .titulo__presentacionBox{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     h2{
+        font-size: 38px;
+        @media (max-width: 1200px){
+            font-size: 32px;
+        }
+     }
+ }
+ .presentacionBox__tex{
+     font-size:38px ;
+ }
+ .presentacion__sobreTote{
+     display: flex;
+     justify-content: center;
+ }
+ .Informaciom_segundaMitad__boxInfo-titulo{
+ background-color: $colorVioleta;
+ width: 30vw;
+ height: 8vw;
+ border: solid black 2px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ }
+ .sobreTote__titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 80%;
+    height: 50px;
+     background-color:$colorVioleta;
+     text-align: center;
+     border: solid black 2px;
+     h2{
+        font-size: 18px;
+     }
+ }
+ .sobreTote__informacionTote{
+     background-color: $colorRosa;
+     margin: 20px 0px 20px 10px;
+     width: 80%;
+     height: 215px;
+     border: solid black 2px;
+     align-items: center;
+     p{
+        font-size: 15px;
+        font-weight: 400;
+        background-color: $colorRosa;
+    }
+    @media (max-width: 1200px){
+        height: 150px;
+        p{
+            font-size: 12px;
+        }
+    }
+        @media (max-width: 500px){
+        margin-bottom: 50px;
+        height: 200px;
+        width: 100%;
+    };
+    
+ }
+ .informacion__tiposDeTote{
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 30px;
+     width: 100%
+ }
+ .tiposDeTote__titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorVioleta;
+    border: solid black 2px;
+    height: 80px;
+    h2{
+        margin: 0px;
+        background-color: $colorVioleta;
+        font-size: 18px;
+    }
+ }
+ .tiposDeTote__contenido{
+     gap: 50px;
+     padding-top: 50px;
+     padding-bottom: 50px;
+     @each $color, $fondo in $coloresFondo{
+        .contenido__tote--#{$color}{
+            background-color: $fondo;
+            font-size: 16px;
+            font-weight: 400;
+            width: 80%;
+            height: 200px;
+            border: solid black 2px;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (max-width: 1200px){
+                font-size: 12px;
+            }
+            @media (max-width: 500px){
+                font-size: 10px;
+            }
+        };
+    };
+ }
+ @media (max-width: 1200px){
+     .informacion__box{
+         justify-content: center;
+         align-items: center;
+         margin: 0px;
+     }
+     .cuidados__titulo{
+         height: 50px;
+         width: 80%;
+         display: flex;
+     }
+     .parrafo__caretext-amarillo{
+         width: 200px;
+         height: 200px;
+         font-size: 12px;
+     }
+     .parrafo__caretext-verde{
+         width: 200px;
+         height: 200px;
+         font-size: 12px;
+     }
+    
+     .sobreTote__titulo{
+         width: 80% ;
+     }
+     .informacion__presentacion{
+         width: 100%;
+     }
+     .informacionTote__text{
+         font-size: 12px;
+         margin: 0px;
+     }
+     .contenido__toteVerde{
+         width: auto;
+         height: auto;
+         font-size: 12px;
+     }
+     .contenido__toteAmarilla{
+         width: auto;
+         height: auto;
+         font-size: 12px;
+     }
+     .presentacion__titulo{
+         margin-bottom: 20px;
+     }
+     .tiposDeTote__titulo{
+         width: 80%;
+         height: 50px;
+     }
+     @media (max-width: 500px){
+         .informacionTote__text{
+             font-size: 10px;
+             margin: 0px;
+         }
+         .tiposDeTote__contenido{
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+         }
+         .titulo__presentacionBox{
+            h3{
+                font-size: 22px;
+            }
+         }
+     }
+   
+     }
+ 

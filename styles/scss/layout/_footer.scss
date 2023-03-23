@@ -1,0 +1,14 @@
+.footer {
+    margin-top: 7vh;
+    background-color: #ffdc92;
+    border: solid 1.5px black;
+    display: flex;
+    align-items: center;
+    img{
+        width: auto;
+        height: auto;
+        max-height: 50px;
+        max-width: 50px;
+        background-color: #ffdc92;
+    }
+}

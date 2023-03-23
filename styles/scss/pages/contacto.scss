@@ -1,0 +1,191 @@
+@import "../abstract.scss/mixins";
+@import "../abstract.scss/variables";
+.container__decoracionVerdecontacto{
+    margin: 20px;
+    display: flex;
+    justify-content:space-around ;
+ }
+ .contacto__redesSociales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+ .redesSociales__Box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    background-color: $colorRosa;
+    border: solid black 2px;
+    margin-bottom: 84px;
+    margin-top: 50px;
+ }
+ .redesSociales__iconos{
+    background-color: $colorNaranja;
+    height: 200px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid black 2px;
+ }
+ .redesSociales__iconos-box{
+    background-color: $colorNaranja;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+ }
+ .fa-whatsapp-square{
+    font-size: 40px;
+ }
+ .fa-camera-retro{
+    font-size: 40px;
+ }
+ .fa-envelope{
+    font-size: 40px;
+ }
+ .redesSociales__app{
+    display: flex;
+    flex-direction: column;
+    background-color: $colorNaranja;
+    gap: 5px;
+    h3{
+        background-color: $colorNaranja;
+        font-size: 15px;
+    }
+ }
+ .contacto__icono{
+    margin-top: 60px;
+    margin-bottom: 58px;
+    text-align: center;
+    img{
+        display: flex;
+        width: auto;
+        height: auto;
+        max-height: 400px;
+        max-width: 400px;
+    }
+ }
+ .contacto__titulo{
+    margin-top: 98px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .titulo__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        display: inline-block;
+        width: auto;
+        height: auto;
+        max-height: 250px;
+        max-width: 250px;
+        @include mobile{
+            max-height: 100px;
+            max-width: 100px;
+        };
+    }
+    h2{
+        font-size: 38px;
+        margin-left: 20px;
+        @include mobile{
+            font-size: 26px;
+        };
+    }
+ } 
+ .container__contenedores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+    @each $color, $fondo in $coloresFondo{
+        .container__decoracion--#{$color}{
+            background-color: $fondo;
+            width: 100px;
+            height: 15px;
+        }
+ }
+ @include s-m{
+    display: none;
+};
+}
+ .container__decoraconVioleta{
+    background-color: $colorVioleta;
+    width: 100px;
+    height: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+ }
+ .container__decoracionVerde{
+    background-color:$colorVerde;
+    width: 100px;
+    height: 15px;
+ }
+ .contacto__formTitulo{
+    margin-top: 40px;
+    width: 500px;
+    height: 100px;
+    background-color: $colorRosa;
+    border: solid black 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    @include mobile{
+        width: 300px;
+    };
+ }
+.formulario__field{
+    background-color:$colorVerde ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 600px;
+    padding: 50px;
+    margin-bottom: 10px;
+    border: solid black 2px;
+    font-size: 18px;
+    @include mobile{
+        width: 300px;
+    };
+
+}
+.field{
+    border: solid 2px;
+    padding: 10px;
+    font-size: 16px;
+}
+input, textarea{
+    border: solid black 2px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.contactoFieldBox-checkbox-text{
+    margin: 5px;
+    text-align:left;
+}
+.consulta-text{
+    margin: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+.contactoFieldBox-buttom{
+    width: 120px;
+    height: 40px;
+    background-color: $colorRosa;
+    font-weight: bold;
+}
+
+.contactoFieldBox-buttom-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}

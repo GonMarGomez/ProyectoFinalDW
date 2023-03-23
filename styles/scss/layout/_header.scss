@@ -1,0 +1,83 @@
+@import "../abstract.scss/variables";
+header{
+    display: flex;
+    background-color: $colorNaranja;
+    height: 60px;
+    justify-content: space-between;
+    border: solid 2px black;
+    margin-bottom: 40px;
+    width: 100%;
+    margin: 0px;
+    a{
+        padding: 10px;
+    }
+    h1{
+        font-family: 'Lily Script One';
+        display: flex;
+        align-items: center;
+        border: black;
+        color: $colorVioleta;
+        background-color: $colorNaranja;
+        font-size: 40px;
+        margin-right: 10px;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: self-end;
+        text-align: center;
+        background-color: $colorNaranja;
+        max-width: 500px;
+        ul{
+            display: flex;
+            margin: 0px;
+            li{
+                list-style: none;
+                a{
+                    border: solid 2px black;
+                    border-bottom: 0px;
+                    height: 40px;
+                    text-align: center;
+                    padding: 15px 10px 0px 10px;
+                    margin-top: 18px;
+                    border-radius: 10px 10px 0px 0px;
+                    text-decoration: none;
+                    background-color: $colorVerde;
+                    color: black;
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+.navbar{
+    background-color: $colorNaranja;
+    display: none;
+    }
+    .header__logo{
+        width: auto;
+        height: auto;
+        max-height: 50px;
+        max-width: 50px;
+        background-color: $colorNaranja;
+    }
+
+.activo {
+    background-color: $colorActive;
+}
+
+.fa-shopping-bag {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 40px;
+    background-color: $colorNaranja;
+}
+@media screen and (max-width: 800px) {
+    .navbar {
+        display: flex;
+    }
+    header{
+        display: none;
+    }
+}

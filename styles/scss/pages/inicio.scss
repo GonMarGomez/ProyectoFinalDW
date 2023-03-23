@@ -1,0 +1,256 @@
+@import "../abstract.scss/variables";
+.Inicio__presentacion{
+    margin-top: 50px;
+ }
+ .inicio__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    h2{
+        margin: 0px;
+        display: flex;
+        font-size: 48px;
+        align-items: center;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: bold;
+    }
+ }
+.inicio__efecto-ig {
+    background-color: #f5f5f5;
+    border: solid black 2px;
+    display: inline-block;
+    max-width: 40vw;
+    max-height: 30vw;
+}
+.inicio__imagen {
+    width: 100%;
+    padding: 0px;
+}
+
+.imagen__iconos {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px 0px 5px
+}
+
+.fa-heart {
+    font-size: 1.5vw;
+    background-color: #f5f5f5;
+}
+.fa-play {
+    @extend .fa-heart;
+}
+.fa-stop {
+  @extend .fa-heart;
+}
+.sobreGroovis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.inicio__sobreGroovis {
+    border: solid black 2px;
+    background-color: #ffdc92;
+    height: 390px;
+    width: 190px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.sobreGroovis__text {
+    padding: 0px;
+    margin: 0px;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+.sobreGroovis__img{
+    width: auto;
+    height: auto;
+    max-width: 14vw;
+    margin: 0;    
+}
+.sobreNosotros__logo {
+    width: auto;
+    height: auto;
+    max-width: 15vw;
+    margin: 0 auto;
+}
+.bienvenida__img {
+    width: auto;
+    height: auto;
+    max-height: 20vh;
+    max-width: 30vw;
+
+}
+.sobreNosotros{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    p h2{
+        font-weight: 400;
+        text-align: left;
+        font-size: 16px;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.sobreNosotros__textBox {
+    font-size: 18px;
+    background-color: #c0d85c;
+    border: solid black 2px;
+    height: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    margin: 0px;
+    h2{
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+    }
+}
+.sobreNosotros__rectanguloRosa {
+    background-color: #ffa5c9;
+    border: solid 2px black;
+    height: 60px;
+    margin-bottom: 102px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+@media (max-width: 1200px){
+    .inicio__content{
+        h2{
+            margin-bottom: 20px;
+        }
+    }
+    .sobreGroovis{
+        padding: 0px;
+    }
+    .inicio__sobreGroovis {
+        height: 100px;
+        width: 800px;
+    }
+    .sobreGroovis__img{
+       max-width: 200px;
+    }
+    .sobreNosotros{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobreNosotros__textBox{
+        width: 800px;
+    }
+    .sobreNosotros__logo{
+        max-width: 200px;
+    }
+    .inicio__efecto-ig{
+        max-width: 400px;
+        max-height: 400px;
+    }
+    .fa-play {
+        font-size: 20px;
+        background-color: #f5f5f5;
+    }
+    
+    .fa-stop {
+        font-size: 20px;
+        background-color: #f5f5f5;
+    }
+    
+    .fa-heart {
+        font-size: 20px;
+        background-color: #f5f5f5;
+    }
+    .imagen__iconos{
+        padding: 10px;
+    }
+    .inicio__content{
+        margin-bottom: 20px;
+    }
+ 
+}
+
+@media (max-width: 800px){
+    .inicio__content{
+        h2{
+            max-width: 600px;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+    }
+    .navbar {
+        display: flex;
+
+    }
+    .headerStyle {
+        display: none;
+    }
+    .sobreNosotros__text{
+        font-size: 20px;
+        text-align: center;
+    }
+    .sobreNosotros__rectanguloRosa{
+        display: none;
+    }
+    .inicio__sobreGroovis {
+        width: 600px;
+    }
+    .sobreNosotros__textBox{
+        width: 600px;
+    }
+    .inicio__content{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 630px){
+    .inicio__sobreGroovis {
+        width: 350px;
+    }
+    .sobreNosotros__textBox{
+        width: 350px;
+    }
+    .inicio__titulo{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .sobreNosotros__text{
+        font-size: 16px;
+    }
+    .inicio__efecto-ig{
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .inicio__content{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 350px){
+    .inicio__sobreGroovis {
+        width: 200px;
+    }
+    .sobreNosotros__textBox{
+        width: 200px;
+    }
+    .inicio__titulo{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .sobreNosotros__text{
+        font-size: 10px;
+    }
+    .inicio__efecto-ig{
+        max-width: 200px;
+        max-height: 200px;
+    }
+    
+}

@@ -1,0 +1,192 @@
+@import "../abstract.scss/variables";
+.envios{
+    margin-top: 40px;
+ }
+ .inicio__tituloBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ .envios__inicio{
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center;
+    img{
+        width: 150px;
+        margin-right:15px;
+    }
+}
+ .inicio__titulo{
+    font-size: 48px;
+ }
+ .inicio__contenedores{
+    display: flex;
+    justify-content: center;
+ }
+ .contenedores__contenedorVerde{
+    background-color: $colorVerde;
+    width: 60px;
+    height: 15px;
+    margin-right: 10px;
+ }
+ .contenedores__contenedorVioleta{
+    background-color: $colorVioleta;
+    width: 50px;
+    height: 15px;
+ }
+
+ .envios__mapas{
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+ }
+ .mapas__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @each $color, $fondo in $coloresFondo{
+        .box__map--#{$color}{
+            background-color: $fondo;
+            width: 260px;
+            height: 260px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid black 2px;
+            margin-bottom: 10px;
+            @include xl{
+                width: 260px;
+                height: 260px;
+                margin: 0px;
+            }
+            @include m{
+                width: 270px;
+                height: 270px;
+            }
+        };
+    };
+    @include xl{
+        justify-content: space-around;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    @include m{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        gap: 15px;
+    }
+    iframe{
+        width: 200px;
+        height: 200px;
+    }
+ };
+
+.envios__informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    @include xl{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    @each $color, $fondo in $coloresFondo{
+        .informacion__box--#{$color}{
+            background-color: $fondo;
+            border: solid black 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 30%;
+            padding: 5px;
+            @include xl{
+                width: 300px;
+                height: 300px;
+                margin-bottom: 15px;
+                justify-content: center;
+            }
+            @include m{
+                width: 400px;
+            }
+            @include mobile{
+                width: 300px;
+            }
+        };
+    };
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        @include mobile{
+            font-size: 12px;
+        }
+    }
+}
+.informacion__titulo{
+    width: 400px;
+    height: 103px;
+    background-color: $colorRosa;
+    border: solid black 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    h2{
+        font-size: 24px;
+        text-align: center;
+    }
+    @include mobile{
+        width: 300px;
+    }
+}
+.envios__domicilio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    h2{
+        font-size: 18px;
+    }
+    p{
+        font-size: 15px;
+        @include xl{
+            font-size: 15px;
+    }
+}
+.domicilio__titulo{
+    width: 400px;
+    height: 100px;
+    background-color: $colorRosa;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: solid black 2px;
+    margin-bottom: 100px;
+    @include xl{
+        margin-bottom: 10px;
+}
+@include mobile{
+    width: 300px;
+}
+}
+.domicilio__info{
+    width: 400px;
+    height: 350px;
+    background-color: $colorVerde;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black 2px;
+    padding: 10px;
+    @include mobile{
+        width: 300px;
+    }
+}
+}
