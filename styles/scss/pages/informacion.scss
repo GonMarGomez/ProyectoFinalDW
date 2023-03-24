@@ -168,12 +168,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $colorVioleta;
+    background-image: linear-gradient($colorRosa, $colorVioleta);
     border: solid black 2px;
     height: 80px;
     h2{
         margin: 0px;
-        background-color: $colorVioleta;
         font-size: 18px;
     }
  }

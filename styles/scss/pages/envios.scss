@@ -163,7 +163,7 @@
 .domicilio__titulo{
     width: 400px;
     height: 100px;
-    background-color: $colorRosa;
+    background-image: linear-gradient($colorRosa, $colorVioleta);
     display: flex;
     justify-content:center;
     align-items: center;

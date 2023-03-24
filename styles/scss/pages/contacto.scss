@@ -17,7 +17,7 @@
     align-items: center;
     width: 300px;
     height: 100px;
-    background-color: $colorRosa;
+    background-image: linear-gradient($colorRosa, $colorVioleta);
     border: solid black 2px;
     margin-bottom: 84px;
     margin-top: 50px;
@@ -54,6 +54,9 @@
     h3{
         background-color: $colorNaranja;
         font-size: 15px;
+    }
+    a{
+    text-decoration: none;
     }
  }
  .contacto__icono{
