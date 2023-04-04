@@ -233,7 +233,7 @@
 }
 @media (max-width: 630px){
     .sobreNosotros__textBox{
-        width: 350px;
+        width: 100vw;
     }
     .inicio__titulo{
         font-size: 24px;
@@ -247,22 +247,22 @@
         max-height: 300px;
     }
     .inicio__sobreGroovis {
-        width: 300px;
+        width: 100vw;
     }
 }
 @media (max-width: 350px){
     .inicio__sobreGroovis {
-        width: 200px;
+        width: 100vw;
     }
     .sobreNosotros__textBox{
-        width: 200px;
+        width: 100vw;
     }
     .inicio__titulo{
-        font-size: 12px;
+        font-size: 16px;
         margin-bottom: 10px;
     }
     .sobreNosotros__text{
-        font-size: 10px;
+        font-size: 16px;
     }
     .inicio__efecto-ig{
         max-width: 200px;

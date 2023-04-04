@@ -1,9 +1,11 @@
-@import "./base.scss/reset.scss";
-@import "./abstract.scss/variables";
-@import "./layout/header";
-@import "./layout/footer";
-@import "./pages/inicio.scss";
-@import "./pages/productos.scss";
-@import "./pages/informacion.scss";
-@import "./pages/contacto.scss";
-@import "./pages/envios.scss";
+@import "./base.scss/_reset.scss";
+@import "./abstract.scss/_variables";
+@import "./layout/_header";
+@import "./layout/_footer";
+@import "./pages/_inicio.scss";
+@import "./pages/_productos.scss";
+@import "./pages/_informacion.scss";
+@import "./pages/_contacto.scss";
+@import "./pages/_envios.scss";
+@import "./pages/carrito";
+

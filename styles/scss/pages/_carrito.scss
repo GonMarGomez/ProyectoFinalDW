@@ -1,0 +1,29 @@
+@import "../abstract.scss/variables";
+@import "../abstract.scss/mixins";
+.carrito{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-family: "Work Sans", sans-serif;
+        text-align: center;
+        font-size: 38px;
+        border: solid black 2px;
+        padding: 30px;
+        background-color: $colorRosa;
+        @include m{
+          font-size: 28px  
+        };
+    }
+    img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        @include m{
+            width: 100vw  
+          };
+    }
+}

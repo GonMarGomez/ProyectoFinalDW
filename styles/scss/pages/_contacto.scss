@@ -5,60 +5,6 @@
     display: flex;
     justify-content:space-around ;
  }
- .contacto__redesSociales{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
- }
- .redesSociales__Box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 100px;
-    background-image: linear-gradient($colorRosa, $colorVioleta);
-    border: solid black 2px;
-    margin-bottom: 84px;
-    margin-top: 50px;
- }
- .redesSociales__iconos{
-    background-color: $colorNaranja;
-    height: 200px;
-    width: 300px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: solid black 2px;
- }
- .redesSociales__iconos-box{
-    background-color: $colorNaranja;
-    display: flex;
-    flex-direction: column;
-    margin-left: 5px;
- }
- .fa-whatsapp-square{
-    font-size: 40px;
- }
- .fa-camera-retro{
-    font-size: 40px;
- }
- .fa-envelope{
-    font-size: 40px;
- }
- .redesSociales__app{
-    display: flex;
-    flex-direction: column;
-    background-color: $colorNaranja;
-    gap: 5px;
-    h3{
-        background-color: $colorNaranja;
-        font-size: 15px;
-    }
-    a{
-    text-decoration: none;
-    }
- }
  .contacto__icono{
     margin-top: 60px;
     margin-bottom: 58px;
@@ -139,8 +85,8 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
-    @include mobile{
-        width: 300px;
+      @include mobile{
+        width: 100vw;
     };
  }
 .formulario__field{
@@ -155,7 +101,7 @@
     border: solid black 2px;
     font-size: 18px;
     @include mobile{
-        width: 300px;
+        width: 100vw;
     };
 
 }

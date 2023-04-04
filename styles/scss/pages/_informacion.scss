@@ -22,9 +22,9 @@
         background-color:$colorVioleta ;
         font-size: 18px;
     }
-    @media (max-width: 1200px){
+    @include xl{
         margin-bottom: 20px;
-    }
+    };
  }
  .presentacion__titulo{
      display: flex;
@@ -45,26 +45,25 @@
      @each $color, $fondo in $coloresFondo{
         .parrafo__fondo--#{$color}{
             background-color: $fondo;
-            font-size: 15px;
+            font-size: 16px;
             font-weight: 400;
-            border: solid black 2px;
-            height: 200px;
+            border: solid black 2px;    
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0px;
-            @media (max-width: 1200px){
-                width: 40%;
-                height: 150px;
-                font-size: 15px;
-            }
-            @media (max-width: 800px){
-                font-size: 11px;
+            margin-bottom: 20px;
+            @include xl{
+                font-size: 16px;
+                padding: 30px;
+            };   
+            @include m{
+                font-size: 16px;
             }
             @media (max-width: 500px){
-                font-size: 10px;
+                font-size: 16px;
                 flex-direction: column;
-                width: 100%;
+              
             }
         };
     };
@@ -96,9 +95,11 @@
      flex-direction: column;
      justify-content: center;
      h2{
-        font-size: 38px;
-        @media (max-width: 1200px){
+        @include xl{
             font-size: 32px;
+        }
+        @include s-m{
+            font-size: 20px;
         }
      }
  }
@@ -136,23 +137,23 @@
      background-color: $colorRosa;
      margin: 20px 0px 20px 10px;
      width: 80%;
-     height: 215px;
+    padding: 30px;
      border: solid black 2px;
      align-items: center;
      p{
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 400;
         background-color: $colorRosa;
     }
     @media (max-width: 1200px){
-        height: 150px;
+         padding: 10px;
+        font-size: 16px;
         p{
-            font-size: 12px;
+            font-size: 16px;
         }
     }
         @media (max-width: 500px){
-        margin-bottom: 50px;
-        height: 200px;
+        margin-bottom: 100px;
         width: 100%;
     };
     
@@ -185,18 +186,17 @@
             background-color: $fondo;
             font-size: 16px;
             font-weight: 400;
-            width: 80%;
-            height: 200px;
+            padding: 20px;
             border: solid black 2px;
             margin: 0px;
             display: flex;
             justify-content: center;
             align-items: center;
-            @media (max-width: 1200px){
-                font-size: 12px;
-            }
+            @include xl{
+                font-size: 16px;
+            }; 
             @media (max-width: 500px){
-                font-size: 10px;
+                font-size: 16px;
             }
         };
     };
@@ -215,12 +215,12 @@
      .parrafo__caretext-amarillo{
          width: 200px;
          height: 200px;
-         font-size: 12px;
+         font-size: 16px;
      }
      .parrafo__caretext-verde{
          width: 200px;
          height: 200px;
-         font-size: 12px;
+         font-size: 16px;
      }
     
      .sobreTote__titulo{
@@ -230,18 +230,18 @@
          width: 100%;
      }
      .informacionTote__text{
-         font-size: 12px;
+         font-size: 16px;
          margin: 0px;
      }
      .contenido__toteVerde{
          width: auto;
          height: auto;
-         font-size: 12px;
+         font-size: 16px;
      }
      .contenido__toteAmarilla{
          width: auto;
          height: auto;
-         font-size: 12px;
+         font-size: 16px;
      }
      .presentacion__titulo{
          margin-bottom: 20px;
@@ -252,7 +252,7 @@
      }
      @media (max-width: 500px){
          .informacionTote__text{
-             font-size: 10px;
+             font-size: 16px;
              margin: 0px;
          }
          .tiposDeTote__contenido{

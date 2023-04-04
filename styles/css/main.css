@@ -84,6 +84,7 @@ header nav ul li a {
   margin-right: 20px;
   font-size: 40px;
   background-color: #ffdc92;
+  color: #b68bc1;
 }
 
 @media screen and (max-width: 800px) {
@@ -100,6 +101,22 @@ header nav ul li a {
   border: solid 1.5px black;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 10px 80px 20px 80px;
+}
+@media screen and (max-width: 1200px) {
+  .footer {
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
 }
 .footer img {
   width: auto;
@@ -107,6 +124,60 @@ header nav ul li a {
   max-height: 50px;
   max-width: 50px;
   background-color: #ffdc92;
+}
+.footer h3 {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Work Sans", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .redesSociales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.RedesSociales__box {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+@media screen and (max-width: 600px) {
+  .RedesSociales__box {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.redSocial {
+  display: flex;
+  gap: 2px;
+}
+@media screen and (max-width: 600px) {
+  .redSocial {
+    justify-content: center;
+  }
+}
+
+.fa-whatsapp-square {
+  font-size: 26px;
+  color: #c0d85c;
+}
+
+.fa-camera-retro {
+  font-size: 26px;
+  color: #fea4c7;
+}
+
+.fa-envelope {
+  font-size: 26px;
+  color: #b68bc1;
+}
+
+.app__datos {
+  font-size: 16px;
 }
 
 .Inicio__presentacion {
@@ -375,7 +446,7 @@ header nav ul li a {
 }
 @media (max-width: 630px) {
   .sobreNosotros__textBox {
-    width: 350px;
+    width: 100vw;
   }
   .inicio__titulo {
     font-size: 24px;
@@ -389,22 +460,22 @@ header nav ul li a {
     max-height: 300px;
   }
   .inicio__sobreGroovis {
-    width: 300px;
+    width: 100vw;
   }
 }
 @media (max-width: 350px) {
   .inicio__sobreGroovis {
-    width: 200px;
+    width: 100vw;
   }
   .sobreNosotros__textBox {
-    width: 200px;
+    width: 100vw;
   }
   .inicio__titulo {
-    font-size: 12px;
+    font-size: 16px;
     margin-bottom: 10px;
   }
   .sobreNosotros__text {
-    font-size: 10px;
+    font-size: 16px;
   }
   .inicio__efecto-ig {
     max-width: 200px;
@@ -421,11 +492,28 @@ header nav ul li a {
   max-height: 250px;
   max-width: 250px;
 }
+@media screen and (max-width: 350px) {
+  .inicioProductos {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .inicioProductos img {
+    width: 150px;
+  }
+  .inicioProductos .rectangulos {
+    justify-content: center;
+  }
+}
 
 .inicioProductos__titulo {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media screen and (max-width: 350px) {
+  .inicioProductos__titulo {
+    margin: 10px;
+  }
 }
 
 .rectangulos {
@@ -526,30 +614,24 @@ header nav ul li a {
   max-width: 280px;
   max-height: 280px;
 }
-
-.productos__descrip {
-  text-align: center;
-  max-width: 150px;
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
-@media (max-width: 350px) {
-  .rectangulos {
-    display: none;
-  }
-  .inicioProductos img {
-    display: none;
-  }
+@media screen and (max-width: 350px) {
   .productos__img {
     width: 20vh;
     height: 20vh;
   }
-  .inicioProductos__titulo {
-    margin-top: 20px;
-  }
 }
+
+.productos__descrip {
+  text-align: center;
+  max-width: 150px;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.productos__precio {
+  font-weight: bold;
+}
+
 .informacion {
   margin-top: 50px;
 }
@@ -575,7 +657,7 @@ header nav ul li a {
   background-color: #b68bc1;
   font-size: 18px;
 }
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .cuidados__titulo {
     margin-bottom: 20px;
   }
@@ -603,122 +685,114 @@ header nav ul li a {
 }
 .cuidados__parrafo .parrafo__fondo--Violeta {
   background-color: #b68bc1;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   border: solid black 2px;
-  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0px;
+  margin-bottom: 20px;
 }
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .cuidados__parrafo .parrafo__fondo--Violeta {
-    width: 40%;
-    height: 150px;
-    font-size: 15px;
+    font-size: 16px;
+    padding: 30px;
   }
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .cuidados__parrafo .parrafo__fondo--Violeta {
-    font-size: 11px;
+    font-size: 16px;
   }
 }
 @media (max-width: 500px) {
   .cuidados__parrafo .parrafo__fondo--Violeta {
-    font-size: 10px;
+    font-size: 16px;
     flex-direction: column;
-    width: 100%;
   }
 }
 .cuidados__parrafo .parrafo__fondo--Naranja {
   background-color: #ffdc92;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   border: solid black 2px;
-  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0px;
+  margin-bottom: 20px;
 }
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .cuidados__parrafo .parrafo__fondo--Naranja {
-    width: 40%;
-    height: 150px;
-    font-size: 15px;
+    font-size: 16px;
+    padding: 30px;
   }
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .cuidados__parrafo .parrafo__fondo--Naranja {
-    font-size: 11px;
+    font-size: 16px;
   }
 }
 @media (max-width: 500px) {
   .cuidados__parrafo .parrafo__fondo--Naranja {
-    font-size: 10px;
+    font-size: 16px;
     flex-direction: column;
-    width: 100%;
   }
 }
 .cuidados__parrafo .parrafo__fondo--Verde {
   background-color: #c0d85c;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   border: solid black 2px;
-  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0px;
+  margin-bottom: 20px;
 }
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .cuidados__parrafo .parrafo__fondo--Verde {
-    width: 40%;
-    height: 150px;
-    font-size: 15px;
+    font-size: 16px;
+    padding: 30px;
   }
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .cuidados__parrafo .parrafo__fondo--Verde {
-    font-size: 11px;
+    font-size: 16px;
   }
 }
 @media (max-width: 500px) {
   .cuidados__parrafo .parrafo__fondo--Verde {
-    font-size: 10px;
+    font-size: 16px;
     flex-direction: column;
-    width: 100%;
   }
 }
 .cuidados__parrafo .parrafo__fondo--Rosa {
   background-color: #ffa5c9;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   border: solid black 2px;
-  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0px;
+  margin-bottom: 20px;
 }
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .cuidados__parrafo .parrafo__fondo--Rosa {
-    width: 40%;
-    height: 150px;
-    font-size: 15px;
+    font-size: 16px;
+    padding: 30px;
   }
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .cuidados__parrafo .parrafo__fondo--Rosa {
-    font-size: 11px;
+    font-size: 16px;
   }
 }
 @media (max-width: 500px) {
   .cuidados__parrafo .parrafo__fondo--Rosa {
-    font-size: 10px;
+    font-size: 16px;
     flex-direction: column;
-    width: 100%;
   }
 }
 
@@ -765,12 +839,14 @@ header nav ul li a {
   flex-direction: column;
   justify-content: center;
 }
-.titulo__presentacionBox h2 {
-  font-size: 38px;
-}
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .titulo__presentacionBox h2 {
     font-size: 32px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .titulo__presentacionBox h2 {
+    font-size: 20px;
   }
 }
 
@@ -812,27 +888,27 @@ header nav ul li a {
   background-color: #ffa5c9;
   margin: 20px 0px 20px 10px;
   width: 80%;
-  height: 215px;
+  padding: 30px;
   border: solid black 2px;
   align-items: center;
 }
 .sobreTote__informacionTote p {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   background-color: #ffa5c9;
 }
 @media (max-width: 1200px) {
   .sobreTote__informacionTote {
-    height: 150px;
+    padding: 10px;
+    font-size: 16px;
   }
   .sobreTote__informacionTote p {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 @media (max-width: 500px) {
   .sobreTote__informacionTote {
-    margin-bottom: 50px;
-    height: 200px;
+    margin-bottom: 100px;
     width: 100%;
   }
 }
@@ -867,88 +943,84 @@ header nav ul li a {
   background-color: #b68bc1;
   font-size: 16px;
   font-weight: 400;
-  width: 80%;
-  height: 200px;
+  padding: 20px;
   border: solid black 2px;
   margin: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .tiposDeTote__contenido .contenido__tote--Violeta {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 @media (max-width: 500px) {
   .tiposDeTote__contenido .contenido__tote--Violeta {
-    font-size: 10px;
+    font-size: 16px;
   }
 }
 .tiposDeTote__contenido .contenido__tote--Naranja {
   background-color: #ffdc92;
   font-size: 16px;
   font-weight: 400;
-  width: 80%;
-  height: 200px;
+  padding: 20px;
   border: solid black 2px;
   margin: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .tiposDeTote__contenido .contenido__tote--Naranja {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 @media (max-width: 500px) {
   .tiposDeTote__contenido .contenido__tote--Naranja {
-    font-size: 10px;
+    font-size: 16px;
   }
 }
 .tiposDeTote__contenido .contenido__tote--Verde {
   background-color: #c0d85c;
   font-size: 16px;
   font-weight: 400;
-  width: 80%;
-  height: 200px;
+  padding: 20px;
   border: solid black 2px;
   margin: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .tiposDeTote__contenido .contenido__tote--Verde {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 @media (max-width: 500px) {
   .tiposDeTote__contenido .contenido__tote--Verde {
-    font-size: 10px;
+    font-size: 16px;
   }
 }
 .tiposDeTote__contenido .contenido__tote--Rosa {
   background-color: #ffa5c9;
   font-size: 16px;
   font-weight: 400;
-  width: 80%;
-  height: 200px;
+  padding: 20px;
   border: solid black 2px;
   margin: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .tiposDeTote__contenido .contenido__tote--Rosa {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 @media (max-width: 500px) {
   .tiposDeTote__contenido .contenido__tote--Rosa {
-    font-size: 10px;
+    font-size: 16px;
   }
 }
 
@@ -966,12 +1038,12 @@ header nav ul li a {
   .parrafo__caretext-amarillo {
     width: 200px;
     height: 200px;
-    font-size: 12px;
+    font-size: 16px;
   }
   .parrafo__caretext-verde {
     width: 200px;
     height: 200px;
-    font-size: 12px;
+    font-size: 16px;
   }
   .sobreTote__titulo {
     width: 80%;
@@ -980,18 +1052,18 @@ header nav ul li a {
     width: 100%;
   }
   .informacionTote__text {
-    font-size: 12px;
+    font-size: 16px;
     margin: 0px;
   }
   .contenido__toteVerde {
     width: auto;
     height: auto;
-    font-size: 12px;
+    font-size: 16px;
   }
   .contenido__toteAmarilla {
     width: auto;
     height: auto;
-    font-size: 12px;
+    font-size: 16px;
   }
   .presentacion__titulo {
     margin-bottom: 20px;
@@ -1003,7 +1075,7 @@ header nav ul li a {
 }
 @media (max-width: 1200px) and (max-width: 500px) {
   .informacionTote__text {
-    font-size: 10px;
+    font-size: 16px;
     margin: 0px;
   }
   .tiposDeTote__contenido {
@@ -1019,68 +1091,6 @@ header nav ul li a {
   margin: 20px;
   display: flex;
   justify-content: space-around;
-}
-
-.contacto__redesSociales {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.redesSociales__Box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 100px;
-  background-image: linear-gradient(#ffa5c9, #b68bc1);
-  border: solid black 2px;
-  margin-bottom: 84px;
-  margin-top: 50px;
-}
-
-.redesSociales__iconos {
-  background-color: #ffdc92;
-  height: 200px;
-  width: 300px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border: solid black 2px;
-}
-
-.redesSociales__iconos-box {
-  background-color: #ffdc92;
-  display: flex;
-  flex-direction: column;
-  margin-left: 5px;
-}
-
-.fa-whatsapp-square {
-  font-size: 40px;
-}
-
-.fa-camera-retro {
-  font-size: 40px;
-}
-
-.fa-envelope {
-  font-size: 40px;
-}
-
-.redesSociales__app {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffdc92;
-  gap: 5px;
-}
-.redesSociales__app h3 {
-  background-color: #ffdc92;
-  font-size: 15px;
-}
-.redesSociales__app a {
-  text-decoration: none;
 }
 
 .contacto__icono {
@@ -1191,7 +1201,7 @@ header nav ul li a {
 }
 @media screen and (max-width: 600px) {
   .contacto__formTitulo {
-    width: 300px;
+    width: 100vw;
   }
 }
 
@@ -1209,7 +1219,7 @@ header nav ul li a {
 }
 @media screen and (max-width: 600px) {
   .formulario__field {
-    width: 300px;
+    width: 100vw;
   }
 }
 
@@ -1294,14 +1304,15 @@ input, textarea {
 
 .envios__mapas {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   padding-right: 5px;
 }
 
 .mapas__box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 20px;
   align-items: center;
 }
 .mapas__box .box__map--Violeta {
@@ -1316,9 +1327,7 @@ input, textarea {
 }
 @media screen and (max-width: 1200px) {
   .mapas__box .box__map--Violeta {
-    width: 260px;
-    height: 260px;
-    margin: 0px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -1339,9 +1348,7 @@ input, textarea {
 }
 @media screen and (max-width: 1200px) {
   .mapas__box .box__map--Naranja {
-    width: 260px;
-    height: 260px;
-    margin: 0px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -1362,9 +1369,7 @@ input, textarea {
 }
 @media screen and (max-width: 1200px) {
   .mapas__box .box__map--Verde {
-    width: 260px;
-    height: 260px;
-    margin: 0px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -1385,22 +1390,13 @@ input, textarea {
 }
 @media screen and (max-width: 1200px) {
   .mapas__box .box__map--Rosa {
-    width: 260px;
-    height: 260px;
-    margin: 0px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 800px) {
   .mapas__box .box__map--Rosa {
     width: 270px;
     height: 270px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .mapas__box {
-    justify-content: space-around;
-    flex-direction: row;
-    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -1422,12 +1418,10 @@ input, textarea {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  gap: 20px;
 }
 @media screen and (max-width: 1200px) {
   .envios__informacion {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    flex-direction: column-reverse;
     gap: 10px;
   }
 }
@@ -1437,14 +1431,13 @@ input, textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 30%;
+  gap: 40px;
   padding: 5px;
+  width: 300px;
+  height: 300px;
 }
 @media screen and (max-width: 1200px) {
   .envios__informacion .informacion__box--Violeta {
-    width: 300px;
-    height: 300px;
     margin-bottom: 15px;
     justify-content: center;
   }
@@ -1465,14 +1458,13 @@ input, textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 30%;
+  gap: 40px;
   padding: 5px;
+  width: 300px;
+  height: 300px;
 }
 @media screen and (max-width: 1200px) {
   .envios__informacion .informacion__box--Naranja {
-    width: 300px;
-    height: 300px;
     margin-bottom: 15px;
     justify-content: center;
   }
@@ -1493,14 +1485,13 @@ input, textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 30%;
+  gap: 40px;
   padding: 5px;
+  width: 300px;
+  height: 300px;
 }
 @media screen and (max-width: 1200px) {
   .envios__informacion .informacion__box--Verde {
-    width: 300px;
-    height: 300px;
     margin-bottom: 15px;
     justify-content: center;
   }
@@ -1521,14 +1512,13 @@ input, textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 30%;
+  gap: 40px;
   padding: 5px;
+  width: 300px;
+  height: 300px;
 }
 @media screen and (max-width: 1200px) {
   .envios__informacion .informacion__box--Rosa {
-    width: 300px;
-    height: 300px;
     margin-bottom: 15px;
     justify-content: center;
   }
@@ -1544,14 +1534,12 @@ input, textarea {
   }
 }
 .envios__informacion p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
+  text-align: center;
+  font-size: 16px;
 }
 @media screen and (max-width: 600px) {
   .envios__informacion p {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
@@ -1579,17 +1567,17 @@ input, textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
 }
 .envios__domicilio h2 {
   font-size: 18px;
 }
 .envios__domicilio p {
-  font-size: 15px;
+  font-size: 16px;
+  text-align: center;
 }
 @media screen and (max-width: 1200px) {
   .envios__domicilio p {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 .envios__domicilio .domicilio__titulo {
@@ -1600,7 +1588,7 @@ input, textarea {
   justify-content: center;
   align-items: center;
   border: solid black 2px;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 1200px) {
   .envios__domicilio .domicilio__titulo {
@@ -1625,6 +1613,38 @@ input, textarea {
 @media screen and (max-width: 600px) {
   .envios__domicilio .domicilio__info {
     width: 300px;
+  }
+}
+
+.carrito {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carrito h2 {
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  font-size: 38px;
+  border: solid black 2px;
+  padding: 30px;
+  background-color: #ffa5c9;
+}
+@media screen and (max-width: 800px) {
+  .carrito h2 {
+    font-size: 28px;
+  }
+}
+.carrito img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .carrito img {
+    width: 100vw;
   }
 }
 
