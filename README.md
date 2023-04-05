@@ -3,15 +3,16 @@
 
 Bienvenidxs a mi primer proyecto!! 😎 aquí puedes encontrar los diferentes tipos de lenguajes y herramientas aprendidos en el curso de desarrollo web.
 
-Lenguajes:
-
+Lenguaje de marcado de etiquetas:
 - HTML
+
+------------
+Lenguaje de estilado:
 - CSS
 - SASS-SCSS
 
 ------------
 Herramientas:
-
 - Bootstrap
 
 ------------
