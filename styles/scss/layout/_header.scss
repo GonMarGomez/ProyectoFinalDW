@@ -3,7 +3,7 @@ header{
     display: flex;
     background-color: $colorNaranja;
     height: 60px;
-    justify-content: space-between;
+    justify-content:space-around;
     border: solid 2px black;
     margin-bottom: 40px;
     width: 100%;
@@ -28,6 +28,7 @@ header{
         text-align: center;
         background-color: $colorNaranja;
         max-width: 500px;
+        margin-right: 100px;
         ul{
             display: flex;
             margin: 0px;
@@ -64,15 +65,6 @@ header{
 
 .activo {
     background-color: $colorActive;
-}
-
-.fa-shopping-bag {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-    font-size: 40px;
-    background-color: $colorNaranja;
-    color: $colorVioleta;
 }
 @media screen and (max-width: 800px) {
     .navbar {

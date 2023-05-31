@@ -39,16 +39,19 @@
                         <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
+                        <a class="nav-link" aria-current="page" href="./productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./informacion.html">Informacion</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                        <a class="nav-link active" href="./contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./envios.html">Envios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./carrito.html">Carrito</a>
                     </li>
                 </ul>
             </div>
@@ -77,7 +80,7 @@
                 </li>
             </ul>
         </nav>
-        <a href="./carrito.html"><i class="fas fa-shopping-bag"></i></a>
+
     </header>
     <main id="Productos">
         <section class="inicioProductos">
@@ -90,60 +93,31 @@
                 </div>
             </div>
         </section>
-        <div class="productos__presentacion">
-            <article class="productos__presentacion--item">
-                <div class="productos__presentacion--Naranja">
-                    <img class="productos__img" src="../imagenes/tote-corazon-rojo.jpg"
-                        alt="Bolsa ecologica bordada con un corazon color rojo" />
-                </div>
-                <h3 class="productos__descrip">
-                    Tote Corazon Rojo *Chicas Super Poderosas*
-                </h3>
-                <h4 class="productos__precio">$3.500</h4>
-            </article>
-            <article class="productos__presentacion--item">
-                <div class="productos__presentacion--Rosa">
-                    <img class="productos__img" src="../imagenes/tote-fr.jpg"
-                        alt="Bolsa ecologica bordada con fresas pequeñas de color rojo" />
-                </div>
-                <h3 class="productos__descrip">Tote Cerezas</h3>
-                <h4 class="productos__precio">$2.500</h4>
-            </article>
-            <article class="productos__presentacion--item">
-                <div class="productos__presentacion--Verde">
-                    <img class="productos__img" src="../imagenes/tote-corazones.jpg"
-                        alt="Bolsa ecologica bordada con muchos corazones pequeños de muchos colores" />
-                </div>
-                <h3 class="productos__descrip">Tote Corazones</h3>
-                <h4 class="productos__precio">$2.500</h4>
-            </article>
-            <article class="productos__presentacion--item">
-                <div class="productos__presentacion--Rosa">
-                    <img class="productos__img" src="../imagenes/tote-disco.jpg"
-                        alt="Bolsa ecologica bordada con una bola de disco color naranja" />
-                </div>
-                <h3 class="productos__descrip">Tote Disco Groovi</h3>
-                <h4 class="productos__precio">$3.500</h4>
-            </article>
-            <article class="productos__presentacion--item">
-                <div class="productos__presentacion--Naranja">
-                    <img class="productos__img" src="../imagenes/tote-corazon-naranja.jpg"
-                        alt="Bolsa ecologica bordada con un corazon color naranja" />
-                </div>
-                <h3 class="productos__descrip">
-                    Tote Corazon Naranja *Chicas Super Poderosas*
-                </h3>
-                <h4 class="productos__precio">$3.500</h4>
-            </article>
-            <article class="productos__presentacion--item">
-                <div class="productos__presentacion--Violeta">
-                    <img class="productos__img" src="../imagenes/tote-psicod.jpg"
-                        alt="Bolsa ecologica bordada con figura de lineas curvas y asimetricas" />
-                </div>
-                <h3 class="productos__descrip">Tote TotePsicodelica</h3>
-                <h4 class="productos__precio">$2.500</h4>
-            </article>
+        <div class="botonCarrito">
+            <div class="botonEliminar">
+                <input id="eliminarTodo" class="boton"  type="submit" value="Eliminar Todo"/>
+                <input id="volverAProductos" class="boton"  type="submit" value="Productos"/>
+            </div> 
+        <i id="carrito" class="fas fa-shopping-bag"></i>
         </div>
+        <div id="notificacionAgregar">
+            <h2>HAS AGREGADO UN PRODUCTO AL CARRITO</h2>
+            <button id="cerrarAgregar">Cerrar</button>
+        </div>
+        <div id="productos__presentacion">
+        </div>
+        <div id="notificacionEliminarSel">
+            <h2>PRODUCTO ELIMINADO</h2>
+            <button id="cerrarElimSel">Cerrar</button>
+        </div>
+        <div id="notificacionEliminar">
+            <h2>HAS ELIMINADO TODOS LOS PRODUCTOS DEL CARRITO</h2>
+            <button id="cerrarNotificacion">Cerrar</button>
+        </div>
+        <div id="carrito__presentacion">
+            </div>
+            <div id="totalProductos">
+            </div>
     </main>
     <footer class="footer">
         <img src="../imagenes/logo-mariposa-icon.ico" alt="Logo de mariposa de la marca" />
@@ -175,6 +149,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
+    <script src="../index.js"></script>
 </body>
 
 </html>
