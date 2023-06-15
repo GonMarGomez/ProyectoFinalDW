@@ -20,7 +20,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
     <link rel="icon" type="image/x-icon" href="../imagenes/logo-mariposa-icon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="../styles/css/main.css" />
+
 </head>
 
 <body>
@@ -95,29 +97,23 @@
                     <h2>CONSULTAS</h2>
                 </div>
                 <section class="contacto__formulario">
-                    <form class="formulario__field">
+                    <form id="form" class="formulario__field">
                         <label for="nombre">Nombre</label>
-                        <input class="field" type="text" id="nombre" />
+                        <input class="field" type="text" name="nombre" id="nombre" />
                         <label for="apellido">Apellido</label>
                         <input class="field" type="text" name="apellido" id="apellido" />
                         <label for="mail">Mail</label>
-                        <input class="field" type="email" id="mail" required />
-                        <div class="contactoFieldBox-checkbox">
-                            <h3 class="contactoFieldBox-checkbox-text">
-                                Seleccione el/los tipos de Tote:
-                            </h3>
-                            <label for="tote-rellena">Tote Rellena</label>
-                            <input class="field" type="checkbox" name="tote-rellena" id="tote-rellena" />
-                            <label for="tote-simple">Tote Simple</label>
-                            <input class="field" type="checkbox" name="tote-simple" id="tote-simple" />
-                        </div>
+                        <input class="field" type="email" name="email" id="mail" required />
                         <label class="consulta-text" for="consulta">Deje su consulta</label>
-                        <textarea name="texta" id="consulta" cols="30" rows="10"></textarea>
+                        <textarea name="mensaje" id="consulta" cols="30" rows="10"></textarea>
                         <div class="contactoFieldBox-buttom-box">
-                            <input class="contactoFieldBox-buttom" type="submit" value="Enviar" />
+                            <input type="submit" id="buttonForm" class="contactoFieldBox-buttom" type="submit"
+                                value="Enviar" />
                         </div>
+
                     </form>
                 </section>
+
             </section>
         </section>
     </main>
@@ -151,7 +147,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
-        <script src="../index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('ONKgA6NhHCD9bb3Zk')
+    </script>
+    </script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../contacto.js"></script>
 </body>
 
 </html>

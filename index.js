@@ -1,53 +1,19 @@
-let arrayProductos = [
-  {
-    id: 1,
-    nombre: "toteCorazonRojo",
-    precio: 4500,
-    descripcion: "Tote Corazon Rojo: Chicas super poderosas",
-    imagen: "../imagenes/tote-corazon-rojo.jpg",
-    color: "Naranja",
-  },
-  {
-    id: 2,
-    nombre: "toteCerezas",
-    precio: 3500,
-    descripcion: "Tote de Cerezas",
-    imagen: "../imagenes/tote-fr.jpg",
-    color: "Rosa",
-  },
-  {
-    id: 3,
-    nombre: "toteCorazones",
-    precio: 3500,
-    descripcion: "Tote de Corazones coloridos",
-    imagen: "../imagenes/tote-corazones.jpg",
-    color: "Verde",
-  },
-  {
-    id: 4,
-    nombre: "toteDiscoGroovi",
-    precio: 4500,
-    descripcion: "Tote con Esfera Disco",
-    imagen: "../imagenes/tote-disco.jpg",
-    color: "Violeta",
-  },
-  {
-    id: 5,
-    nombre: "toteCorazonNaranja",
-    precio: 4500,
-    descripcion: "Tote Corazon Rojo: Chicas super poderosas",
-    imagen: "../imagenes/tote-corazon-naranja.jpg",
-    color: "Naranja",
-  },
-  {
-    id: 6,
-    nombre: "totePsicodelica",
-    precio: 4500,
-    descripcion: "Tote Psicodelica con lineas y curvas asimétricas",
-    imagen: "../imagenes/tote-psicod.jpg",
-    color: "Violeta",
-  },
-];
+const arrayProductos =[]
+const traerProductos = async () =>{
+  try{
+    const response = await fetch('/productos.json');
+     const data = await response.json();
+    listaDeProuctos(data)
+    agregarElemento(data)
+
+  }
+  catch(error){
+  alert('error')
+  }
+}
+traerProductos()
+
+
 let carrito = [];
 
 const contenedor = document.getElementById("productos__presentacion");
@@ -84,20 +50,22 @@ function listaDeProuctos(lista) {
     contenedor.appendChild(articulo);
   }
 }
-
-contenedor.addEventListener("click", (e) => {
-  if (e.target && e.target.tagName === "INPUT") {
-    let elemento = arrayProductos.find(
-      (element) => element.id === parseInt(e.target.id[12])
-    );
-    carrito.push(elemento);
-    localStorage.setItem("carritoNuevo", JSON.stringify(carrito));
-    notificacionAgregar.style.display = "flex";
-    botonAgregar.addEventListener("click", () => {
-      notificacionAgregar.style.display = "none";
-    });
-  }
-});
+function agregarElemento(lista){
+  contenedor.addEventListener("click", (e) => {
+    if (e.target && e.target.tagName === "INPUT") {
+      let elemento = lista.find(
+        (element) => element.id === parseInt(e.target.id[12])
+      );
+      carrito.push(elemento);
+      localStorage.setItem("carritoNuevo", JSON.stringify(carrito));
+      notificacionAgregar.style.display = "flex";
+      botonAgregar.addEventListener("click", () => {
+        notificacionAgregar.style.display = "none";
+      });
+    }
+  });
+}
+  
 function actualizarProductos() {
   let traerCarrito = JSON.parse(localStorage.getItem("carritoNuevo"));
   if (carrito) {
