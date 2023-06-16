@@ -29,4 +29,5 @@ El estilo de la pagina se basa en la personalidad del emprendimiento **GROOVIS**
 Groovis es un emprendimiento de bolsas 🌏ecologicas 🌏 bordadas a mano. La estetica tanto de los productos como de la pagina son retro-vintage.
 
 Aquí dejo el link de Vercel. Para poder visualizar la páginas sin errores, ya que el archivo .JSON tiene defectos en gitHub Pages.
-https://proyecto-final-js-six.vercel.app/index.html
+
+https://proyecto-final-dw.vercel.app/
